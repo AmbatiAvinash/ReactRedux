@@ -41,8 +41,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return{
-      onAgeUp: () => dispatch({type: 'ADD'}),
-      onAgeDown: () => dispatch({type: 'SUBTRACT'})
+      onAgeUp: () => dispatch({type: 'ADD', value: 1}),
+      onAgeDown: () => dispatch({type: 'SUBTRACT', value: 1})
     }  
 }
 
